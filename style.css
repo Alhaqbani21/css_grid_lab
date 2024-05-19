@@ -22,6 +22,8 @@
   grid-area: header;
 } */
 
+/* Extra small devices (phones, 600px and down) */
+
 .container1 {
   display: grid;
   grid-template-columns: 1f 1f 1f 1f;
@@ -73,7 +75,6 @@ h1 {
   text-align: center;
 }
 
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   h1 {
     font-size: large;
@@ -94,7 +95,6 @@ h1 {
   .main,
   .hero {
     grid-column: 1/4;
-    background-color: purple;
   }
 
   .main {
@@ -107,7 +107,7 @@ h1 {
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 800px) {
   h1 {
     font-size: larger;
   }
