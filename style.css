@@ -6,7 +6,7 @@
   --color-yellow: rgb(247, 233, 160);
 }
 
-.container {
+/* .container {
   border: 1px solid black;
   height: 50vh;
   display: grid;
@@ -15,7 +15,7 @@
     'header header header header  '
     'Hero main main right   '
     'menu main main right   ';
-}
+} */
 
 /* .item1 {
   border: 1px solid blue;
@@ -71,6 +71,72 @@
 }
 h1 {
   text-align: center;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: large;
+  }
+
+  .container1 {
+    height: 100vh;
+    gap: 1rem;
+    color: white;
+    margin: 2rem 1rem;
+  }
+  .header,
+  .posts,
+  .footer,
+  .images,
+  .content,
+  .side,
+  .main,
+  .hero {
+    grid-column: 1/4;
+    background-color: purple;
+  }
+
+  .main {
+    grid-row: 3/4;
+  }
+  .hero {
+    grid-row: 2/3;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 601px) {
+  h1 {
+    font-size: large;
+  }
+
+  .container1 {
+    height: 100vh;
+    gap: 1rem;
+    color: white;
+    margin: 2rem 1rem;
+  }
+  .header,
+  .posts,
+  .footer,
+  .images,
+  .content,
+  .side,
+  .main,
+  .hero {
+    grid-column: 1/4;
+    background-color: cyan;
+    color: black;
+  }
+  .main {
+    grid-row: 3/4;
+  }
+  .side {
+    grid-row: 4/5;
+  }
+  .hero {
+    grid-row: 2/3;
+  }
 }
 
 .container2 {
